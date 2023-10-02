@@ -11,7 +11,17 @@
             Spacing="25"
             Padding="30,0"
             VerticalOptions="Center">
-            <Label>Fak</Label>
+            <Label>A négyzet oldala:</Label>
+            <Entry Text="{Binding Side, Mode=TwoWay}"/>
+            <HorizontalStackLayout>
+                <Label>Kerület:</Label>
+                <Label Text="{Binding Perimeter}"></Label>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout>
+                <Label>Terület:</Label>
+                <Label Text="{Binding Area}"></Label>
+            </HorizontalStackLayout>
+            <Label Text="{Binding Result}"></Label>
         </VerticalStackLayout>
     </ScrollView>
 
